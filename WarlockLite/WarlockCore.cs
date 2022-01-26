@@ -69,7 +69,7 @@ namespace WarlockLite
             LocalNetCoreRouter.Route(GetOtherSide(), PluginRouting.Commands.SET_GLOBAL_VAR, new object[] { varName, val }, true);
         }
 
-        public static void Run(string script, object[] args)
+        public static void Run(string script)
         {
             Reset();
             Runner.LoadScript(script);
