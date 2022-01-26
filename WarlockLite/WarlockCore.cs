@@ -74,7 +74,7 @@ namespace WarlockLite
             Reset();
             Runner.LoadScript(script);
             RunThisSide();
-            LocalNetCoreRouter.Route(GetOtherSide(), PluginRouting.Commands.RUN, new object[] { script }, true);
+            LocalNetCoreRouter.Route(GetOtherSide(), PluginRouting.Commands.RUN, script, true);
         }
 
         public static void Stop()
